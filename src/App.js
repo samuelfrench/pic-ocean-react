@@ -11,7 +11,7 @@ function App() {
 
   return (
     <div className="App">
-     <ImagePanel contentImages={contentImages} />
+     <ImagePanel contentImages={contentImages} shuffleMs={3000} />
     </div>
   );
 }
