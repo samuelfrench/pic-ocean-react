@@ -1,5 +1,6 @@
 import './App.css';
-import ImagePanel from './components/ImagePanel' 
+import ImagePanel from './components/ImagePanel';
+import './components/ImagePanel.css';
 
 function App() {
   function importAll(r) {
