@@ -1,4 +1,11 @@
 .content-image {
     max-width: 20%;
     height: auto;
-  }
+}
+
+.content-image:hover{
+    transition-property: transform;
+    transition-duration: 0.8s;
+    transition-timing-function: ease-in-out;
+    transform: scale(1.25);
+}
