@@ -1,4 +1,5 @@
 import './App.css';
+import ImagePanel from './components/ImagePanel' 
 
 function App() {
   function importAll(r) {
@@ -9,7 +10,7 @@ function App() {
 
   return (
     <div className="App">
-      { contentImages.map(ci => <img src={ci} className='content-image' alt='Demo content'/>) }
+     <ImagePanel contentImages={contentImages} />
     </div>
   );
 }
