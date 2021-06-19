@@ -3,12 +3,8 @@ import React from 'react';
 const ImagePanel = ({ contentImages }) => {
 
   const [simpleCounter, setSimpleCounter] = React.useState(0);
-  const [imageCount, setImageCount] = React.useState(0);
   
   const imageElementNodes = contentImages.map(ci => <img src={ci} key={ci} className='content-image' alt='Demo content' />)
-  if(imageElementNodes.length !== imageCount){
-    setImageCount(imageElementNodes.length)
-  }
 
   React.useEffect(() => {
     setInterval(() => {
@@ -24,7 +20,5 @@ const ImagePanel = ({ contentImages }) => {
 
   return imagesToDisplay;
 }
-
-
 
 export default ImagePanel
