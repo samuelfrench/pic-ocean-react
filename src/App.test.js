@@ -1,9 +1,10 @@
 import { render, screen } from '@testing-library/react';
 import App from './App';
 
-test('renders test content image', () => {
+//TODO: Add more tests
+test('renders app', () => {
   render(<App />);
-  const linkElement = screen.getByAltText('Demo content');
-  expect(linkElement).toBeInTheDocument();
+  const appWrapper = screen.queryByTestId('App')
+  expect(appWrapper).toBeInTheDocument();
 });
 

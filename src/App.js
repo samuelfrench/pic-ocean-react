@@ -10,7 +10,7 @@ function App() {
   const contentImages = importAll(require.context('./assets/content', false, /\.(png|jpe?g|svg)$/));
 
   return (
-    <div className="App">
+    <div className="App" data-testid="App">
      <ImagePanel contentImages={contentImages}/>
     </div>
   );
